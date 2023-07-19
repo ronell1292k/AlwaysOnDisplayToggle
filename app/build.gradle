@@ -4,21 +4,21 @@ plugins {
 }
 
 android {
-    compileSdkVersion 31
+    namespace 'org.alberto97.aodtoggle'
+    compileSdkVersion 33
 
     defaultConfig {
         applicationId "org.alberto97.aodtoggle"
-        minSdkVersion 26
-        targetSdkVersion 31
+        minSdkVersion 27
+        targetSdkVersion 33
         versionCode 2
         versionName "1.0.1"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
             minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
