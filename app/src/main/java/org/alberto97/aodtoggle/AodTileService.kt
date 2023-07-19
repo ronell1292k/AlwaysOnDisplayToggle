@@ -41,7 +41,7 @@ class AodTileService : TileService() {
     }
 
     private fun showPermissionDialog() {
-        val ctx = ContextThemeWrapper(this, R.style.Theme_AppCompat_DayNight)
+        val ctx = ContextThemeWrapper(this, androidx.appcompat.R.style.Theme_AppCompat_DayNight)
         val msg1 = getString(R.string.grant_msg1)
         val msg2 = getString(R.string.grant_msg2, this.packageName, Manifest.permission.WRITE_SECURE_SETTINGS)
         val dialog = AlertDialog.Builder(ctx)
